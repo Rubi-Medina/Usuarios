@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS07 - API Fetch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="form-content"></div>
+        <div class="d-flex justify-content-center"> <!-- Añadido para centrar el contenido -->
+          <button id="actualizarBoton" class="btn btn-primary">Leer Usuarios</button>
+        </div>
+        <div id="loader" class="loader d-none">
+          <!-- Loader animado -->
+        </div>
+        <div id="content" class="d-none d-flex justify-content-center align-items-center flex-column"> <!-- Centrar el contenido -->
+            <div class="form-content"></div>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th>Avatar</th>
+                  </tr>
+                </thead>
+                <tbody id="user-table-body">
+                  <!-- Aquí se agregarán dinámicamente las filas de usuarios -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+    <script src="script.js"></script>
+</body>
+</html>
